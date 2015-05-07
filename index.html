@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>eizia studio</title>
+	<title>inact studio</title>
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<style type="text/css">
 
@@ -151,7 +151,7 @@
 			Array.prototype.concat.apply([], $allPath).forEach(function(path){
 					path.executeQuery = [];
 					animateCross(path, 
-						0.1, 600, 600, "linear", "point", "inverse")
+						200, 600, 600, "linear", "point", "inverse")
 						(1, 2000, 300, "ease-out", "fill", "verse", function(){
 							//after logo shows up
 							!afterLogoShowsUp.exectued && afterLogoShowsUp();
@@ -191,17 +191,17 @@
 			ratio = ratio || 1;
 			time = time || 600;
 
-			from = ratio * length;
+			from = ratio <= 1 ? ratio * length : ratio;
 			to = fill === "fill" ? "0" : -length;
 
+			tmp = from;
 			if(direction === "inverse"){
-				tmp = from;
 				from = to;
 				to = tmp;
 			}
 
 			path.style.transition = path.style.WebkitTransition = path.style.MozTransition = "none";
-			path.style.strokeDasharray = ratio * length + " " + length;
+			path.style.strokeDasharray = tmp + " " + length;
 			path.style.strokeDashoffset = from;
 			path.getBoundingClientRect();
 			path.style.transition = path.style.WebkitTransition = path.style.MozTransition = "stroke-dashoffset " + time + "ms " + func;
