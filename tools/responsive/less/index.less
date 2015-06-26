@@ -1,0 +1,77 @@
+@import 'base.less';
+
+header{
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+    .display(flex);
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    .box-sizing;
+    position: fixed;
+    top: 0;
+    a{
+        display: block;
+        color: #333;
+        font-size: 1.4rem;
+        height: 44px;
+        svg{
+            width:14px;
+            height: 14px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+    h1{
+        font-size: 1.8rem;
+        color: #333;
+        .flex(1);
+        text-align: center;
+        font-weight: normal;
+    }
+}
+
+.input{
+    max-width: 1000px;
+    font-size: 1.4rem;
+    margin: 54px auto;
+
+    .display(flex);
+    height: 24px;
+    line-height: 24px;
+
+    span{
+        display: block;
+        padding: 0 10px;
+    }
+
+    input[type=url]{
+        width: 300px;
+        padding: 0 10px;
+        outline: none;
+        .box-sizing;
+        &:invalid{
+            border:1px solid red;
+        }
+    }
+    svg{
+        margin: 5px;
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+}
+
+.content{
+
+    white-space: nowrap;
+
+    iframe{
+        vertical-align: top;
+        margin: 10px;
+        border:none;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+
+}
