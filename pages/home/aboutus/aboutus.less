@@ -1,0 +1,78 @@
+
+@import '../../../resource/less/common.less';
+#aboutus{
+    text-align: center;
+	.us{
+	    margin: 0 auto;
+	    display: inline-block;
+	    position: relative;
+        &.show .one{
+        	opacity: 1;
+        }
+	}
+	.one{
+    	background-repeat: no-repeat;
+	    height: 60px;
+	    width: 200px;
+	    background-size: contain;
+	    padding-top: 300px;
+	    line-height: 60px;
+	    font-size: 25px;
+	    display: inline-block;
+	    opacity: 0;
+        &:nth-child(1){
+            .transition(opacity 500ms );
+        }
+        &:nth-child(2){
+            .transition(opacity 500ms 100ms);
+        }
+        &:nth-child(3){
+            .transition(opacity 500ms 200ms);
+        }
+        &:nth-child(4){
+            .transition(opacity 500ms 300ms);
+        }
+	}
+	.contact{
+    	opacity: 0;
+    	pointer-events: none;
+	    .transition(opacity 300ms);
+		a{
+		    font-size: 18px;
+		    background-color: #fff;
+		    border: 1px solid #81849D;
+		    padding: 1.2rem 4rem;
+		    border-radius: 10rem;
+		    margin-top: 4rem;
+    		display: inline-block;
+		}
+	    &.show{
+	    	opacity: 1;
+    		pointer-events: all;
+	    }
+	}
+	.line{
+	    position: absolute;
+	    width: 0;
+	    height: 1px;
+	    top: 300px;
+	    background-color: #81849D;
+	    left: 0;
+	    .transition(width 300ms);
+	    &.show{
+	    	width: 100%;
+	    }
+	}
+
+	.responsive(767px;{
+		.one{
+			width: 100px;
+			height: 30px;
+			padding-top: 150px; 
+		}
+		.line{
+			top: 150px;
+		}
+
+	});
+}

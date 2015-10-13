@@ -1,0 +1,32 @@
+
+@import '../../../resource/less/common.less';
+
+#customer{
+	.customer{
+    	color:#52556E;
+		display: block;
+	    width: 200px;
+	    margin: 5rem auto;
+	    text-align: center;
+	    font-size: 32px;
+        opacity: 0;
+	    &:visited{
+	    	color:#52556E;
+	    }
+        &:nth-child(1){
+            .transition(opacity 500ms );
+        }
+        &:nth-child(2){
+            .transition(opacity 500ms 100ms);
+        }
+        &:nth-child(3){
+            .transition(opacity 500ms 200ms);
+        }
+        &:nth-child(4){
+            .transition(opacity 500ms 300ms);
+        }
+        &.show{
+        	opacity: 1;
+        }
+	}
+}

@@ -1,0 +1,83 @@
+@import '../../../resource/less/common.less';
+
+#case{
+	text-align: center;
+	height: 80%;
+	overflow: scroll;
+	.slogan{
+		color: #52556E;
+		font-size: 2.4rem;
+		font-weight: bold;
+	}
+	.caseList{
+		width: 500px;
+		margin: 50px auto 0;
+		li{
+			a{
+				.display(flex);
+				height: 300px;
+				color: #52556E;
+				.align-items;
+				text-align: center;
+				font-weight: bold;
+				.name{
+					width: 100%;
+					display: inline-block;
+				}
+				position:relative;
+				.border{
+					position: absolute;
+					left: 0;
+					height: 0;
+					width: 100%;
+				}
+				.borderTop{
+					top: 0;
+					&:before{
+						content:'';
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 25px;
+						height: 25px;
+						border-top: 1px solid #52556E;
+						border-left: 1px solid #52556E;
+					};
+					&:after{
+						content:'';
+						position: absolute;
+						right: 0;
+						top: 0;
+						width: 25px;
+						height: 25px;
+						border-top: 1px solid #52556E;
+						border-right: 1px solid #52556E;
+					};
+				}
+				.borderBottom{
+					bottom: 0;
+					&:before{
+						content:'';
+						position: absolute;
+						left: 0;
+						top: -25px;
+						width: 25px;
+						height: 25px;
+						border-bottom: 1px solid #52556E;
+						border-left: 1px solid #52556E;
+					};
+					&:after{
+						content:'';
+						position: absolute;
+						right: 0;
+						top: -25px;
+						width: 25px;
+						height: 25px;
+						border-bottom: 1px solid #52556E;
+						border-right: 1px solid #52556E;
+					};
+				}
+			}
+		}
+	}
+}

@@ -1,228 +1,424 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>eizia studio</title>
-	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<style type="text/css">
-
-	*:not(input) {
-		-webkit-user-select: none;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-		-webkit-touch-callout: none;
-		-webkit-text-size-adjust: none;
-		-moz-user-select: none;
-		outline: none;
-	}
-	html {
-		font-size: 62.5%;
-	}
-	body{
-		margin: 0;
-		padding: 0;
-		background: #333;
-	}
-	#logo{
-		text-align: center;
-		position: fixed;
-		top:50%;
-		margin-top: -3.2rem;
-		width:100%;
-	}
-	#logo svg{
-		height: 6.4rem;
-		width: 5rem;
-		display: inline-block;
-		opacity: 0;
-	}
-	#logo #t{
-		height: 7.8rem;
-	}
-	#logo #a{
-		width: 6.4rem;
-	}
-	footer{
-		text-align: center;
-		position: fixed;
-		bottom: 0;
-		width:100%;
-	}
-	.name{
-		font-size: 1.6rem;
-		display: inline-block;
-		text-align: center;
-		margin: 0 auto;
-		padding: 0 3.6rem;
-		border-top:1px solid #fff;
-		color: #fff;
-		line-height: 4.6rem;
-		font-family: Georgia,Helvetica Neue,Helvetica,Arial;
-	}
-	.delayShow{
-		opacity: 0;
-		transition:opacity 600ms;
-	}
-	</style>
+    <title>Inact Studio</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="Keywords" content="上海小灰智能科技有限公司,inactstudio">
+    <meta name="Description" content="上海小灰智能科技有限公司官方网站">
+    <meta name="viewport" content="minimal-ui=yes,width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+    html{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #363846;
+    }
+    body{
+        display: none;
+    }
+    </style>
 </head>
-<body>
 
-	<div id="logo">
-		<!--  i  -->
-		<svg  id="i" width="100px" height="740px" viewBox="0 0 100 740" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-		    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
-		    <title>i copy</title>
-		    <desc>Created with Sketch.</desc>
-		    <defs></defs>
-		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-		        <g id="inact" sketch:type="MSLayerGroup" transform="translate(49.000000, -163.000000)" stroke="#ffffff" stroke-width="100">
-		            <path d="M1,163 L1,903" id="i-copy" sketch:type="MSShapeGroup"></path>
-		        </g>
-		    </g>
-		</svg>
-		<!-- n -->
-		<svg  id="n" width="493px" height="740px" viewBox="0 0 493 740" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-		    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
-		    <title>Path 21</title>
-		    <desc>Created with Sketch.</desc>
-		    <defs></defs>
-		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-		        <g id="inact" sketch:type="MSLayerGroup" transform="translate(-290.000000, -163.000000)" stroke="#ffffff" stroke-width="100">
-		            <path d="M340.000012,163 L340.000012,903 C340.000012,903 339.999986,608.250009 340.000012,451.050013 C340.000044,254.550019 455.613054,215.25002 536.500006,215.25002 C617.755246,215.25002 733,254.550019 733,451.050013 C733.000001,800.820003 732.999988,903 732.999988,903" id="Path-21" sketch:type="MSShapeGroup"></path>
-		        </g>
-		    </g>
-		</svg>
-	    <!--  a  -->
-		<svg  id="a" width="490px" height="734px" viewBox="0 0 490 734" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-		    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
-		    <title>a copy</title>
-		    <desc>Created with Sketch.</desc>
-		    <defs></defs>
-		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-		        <g id="inact" sketch:type="MSLayerGroup" transform="translate(-990.000000, -166.000000)" stroke="#ffffff" stroke-width="100">
-		            <path d="M1410.4981,453.852931 L1254.49809,453.852931 C1176.49808,453.852931 1127.68825,473.663987 1093.56027,508.330296 C1059.47414,542.954091 1039.99806,592.396724 1039.99806,651.720603 C1039.99806,770.441206 1117.99807,849.588275 1234.99808,849.588275 C1293.33085,849.588275 1341.94068,829.943516 1376.03703,795.547534 C1410.37942,760.903356 1429.99811,711.080905 1429.99811,631.933836 C1429.99811,513.213233 1429.84149,631.245702 1429.99811,493.426466 C1430.1555,354.919095 1420.53167,317.088971 1387.60717,277.523929 C1353.70369,236.78246 1312.9981,216.411725 1195.99808,216.411725 L1117.99807,216.411725" id="a-copy" sketch:type="MSShapeGroup"></path>
-		        </g>
-		    </g>
-		</svg>
-	    <!--  c  -->
-	    <svg  id="c" width="463px" height="740px" viewBox="0 0 463 740" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-		    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
-		    <title>Path 24</title>
-		    <desc>Created with Sketch.</desc>
-		    <defs></defs>
-		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-		        <g id="inact" sketch:type="MSLayerGroup" transform="translate(-1690.000000, -163.000000)" stroke="#ffffff" stroke-width="100">
-		            <path d="M2130,233 C2130,233 2090,213 2010,213 C1830,213 1740,326 1740,533 C1740,740 1830,853 2010,853 C2090,853 2130,833 2130,833" id="Path-24" sketch:type="MSShapeGroup"></path>
-		        </g>
-		    </g>
-		</svg>
-	    <!--  t  -->
-	    <svg id="t" width="400px" height="903px" viewBox="0 0 400 903" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-		    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
-		    <title>Path 25 + Path 26</title>
-		    <desc>Created with Sketch.</desc>
-		    <defs></defs>
-		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-		        <g id="inact" sketch:type="MSLayerGroup" transform="translate(-2350.000000, 0.000000)" stroke="#ffffff" stroke-width="100">
-		            <g id="Path-25-+-Path-26" transform="translate(2350.000000, 0.000000)" sketch:type="MSShapeGroup">
-		                <path d="M0,213 L400,213" id="Path-25"></path>
-		                <path d="M200,0 L200,708 C200,809 251,853 343,853 L360,853" id="Path-26"></path>
-		            </g>
-		        </g>
-		    </g>
-		</svg>
-	</svg>
-	</div>
-
-	<footer class="delayShow">
-		<span class="name">2012-2015, inact studio.</span>
-	</footer>
-
-	<script type="text/javascript">
-	(function(){
-
-		setTimeout(function(){
-			var $allPath = Array.prototype.slice.call(
-					document.getElementById("logo")
-					.getElementsByTagName("svg"))
-					.map(function(svgElment){
-						svgElment.style.opacity = 1;
-						return Array.prototype.slice.call(svgElment.getElementsByTagName("path"))
-					});
-
-			Array.prototype.concat.apply([], $allPath).forEach(function(path){
-					path.executeQuery = [];
-					animateCross(path, 
-						0.1, 600, 600, "linear", "point", "inverse")
-						(1, 2000, 300, "ease-out", "fill", "verse", function(){
-							//after logo shows up
-							!afterLogoShowsUp.exectued && afterLogoShowsUp();
-						});
-				});
-		}, 1000);
-
-		function animateCross(path, ratio, time, gap, func, fill, direction, fn){
-			_executeCross(path, ratio, time, gap, func, fill, direction, fn);
-
-			setTimeout(function(){
-				var arg = path.executeQuery.shift();
-				if(arg){
-					animateCross.apply(animateCross, arg);
-				}
-			}, time + gap);
-
-			return _pushCross.bind(path);
-		}
-
-		function _pushCross(){
-			var arg = Array.prototype.slice.call(arguments);
-			arg.unshift(this);
-			this.executeQuery.push(arg);
-			return _pushCross.bind(this);
-		}
-
-		function _executeCross(path, ratio, time, gap, func, fill, direction, fn){
-
-			var length = path.getTotalLength();
-			var from;
-			var to;
-			var tmp;
-
-			func = func || "linear";
-			gap = gap || 200;
-			ratio = ratio || 1;
-			time = time || 600;
-
-			from = ratio * length;
-			to = fill === "fill" ? "0" : -length;
-
-			if(direction === "inverse"){
-				tmp = from;
-				from = to;
-				to = tmp;
-			}
-
-			path.style.transition = path.style.WebkitTransition = path.style.MozTransition = "none";
-			path.style.strokeDasharray = ratio * length + " " + length;
-			path.style.strokeDashoffset = from;
-			path.getBoundingClientRect();
-			path.style.transition = path.style.WebkitTransition = path.style.MozTransition = "stroke-dashoffset " + time + "ms " + func;
-			path.style.strokeDashoffset = to;
-
-			setTimeout(function(){
-				fn && fn();
-			}, time + gap)
-		}
-
-
-		function afterLogoShowsUp(){
-			var allDelayShow = Array.prototype.slice.call(document.querySelectorAll(".delayShow"));
-
-			allDelayShow.forEach(function(delayElement){
-				delayElement.style.opacity = 1;
-			});
-
-			afterLogoShowsUp.exectued = true;
-		}
-	})();
-	</script>
+<body data-main="home">
+    <div class="gCover">
+        <svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 230 74"
+         enable-background="new 0 0 230 74" xml:space="preserve">
+            <g id="landing" sketch:type="MSPage">
+                <g id="Desktop-HD" transform="translate(-605.000000, -475.000000)" sketch:type="MSArtboardGroup">
+                    <path id="inact" sketch:type="MSShapeGroup" fill="#EBEBEB" d="M814.2,496.6h-12.5v-8.2h12.5c0-2.5,0-4.9,0-7.2c0-1.6,0-3.1,0-4.5
+                        c0-0.5,0-0.9,0-1.2c0-0.2,0-0.2,0-0.3c0-0.1,0-0.1,0-0.1l8.3,0c0,0,0,0,0,0.1c0,0.1,0,0.1,0,0.3c0,0.3,0,0.8,0,1.2
+                        c0,1.3,0,2.8,0,4.5c0,2.4,0,4.8,0,7.2h12.4v8.2h-12.4c0,3.8,0,7.5,0,11.1c0,9.4,0,17.1,0,22.8c0,0.1,0,0.5,0.1,1.1
+                        c0,0.5,0.1,1.1,0.2,1.6c0.3,2.4,1.2,4.3,2.5,5.6c1.4,1.3,3.4,2,6.1,2v8.2c-9.5,0-15.9-5.9-16.9-14.9c-0.1-1.3-0.3-2.9-0.3-3.6
+                        c0-5.6,0-13.4,0-22.8C814.2,504.1,814.2,500.4,814.2,496.6z M633.2,488.4v60.5h8.3c0-0.1,0-0.1,0-0.5c0-0.5,0-0.5,0-1.4
+                        c0-2,0-2,0-4.9c0-5.3,0-10.7,0-15.7c0-5.8,0-10.8,0-14.5c0-3.4,0.5-6.1,1.4-8.3c0.7-1.8,1.8-3.2,3-4.3c2.1-1.8,5-2.6,8.2-2.6
+                        c3.1,0,5.7,0.8,7.7,2.5c1.2,1,2.1,2.4,2.8,4.3c0.8,2.2,1.3,5,1.3,8.4c0,12.8,0,22.6,0,29.7c0,3.5,0,3.5,0,5.6c0,0.8,0,0.8,0,1.3
+                        c0,0.3,0,0.3,0,0.4h8.3c0-0.1,0-0.1,0-0.4c0-0.5,0-0.5,0-1.3c0-2.1,0-2.1,0-5.6c0-7.1,0-16.9,0-29.7c0-8.5-2.3-14.7-6.8-18.7
+                        c-1.9-1.7-4.2-3-6.7-3.7c-2.1-0.6-4.3-0.9-6.5-0.9c-2.2,0-4.5,0.3-6.6,0.9c-2.6,0.8-4.9,2-6.9,3.7c-4.7,4-7.3,10.3-7.3,18.8
+                        c0,3.8,0,8.7,0,14.5c0,5,0,10.3,0,15.7c0,2.9,0,2.9,0,4.9c0,0.8,0,0.8,0,1.4c0,0.4,0,0.4,0,0.5h8.3v-60.5H633.2z M605.1,488.4
+                        v60.5h8.3v-60.5H605.1z M726,508.1h-12.9c-7.2,0-12.5,1.8-16.3,5.7c-3.7,3.7-5.6,8.8-5.6,14.6c0,11.9,8.3,20.3,20.3,20.3
+                        c5.8,0,11-2,14.6-5.6c3.8-3.8,5.7-9.1,5.7-16.3c0-2.8,0-4.2,0-4.8c0-0.1,0-0.2,0-0.2c0,0,0-0.1,0-0.1c0-0.2,0-0.9,0-6.2
+                        c0-11.8-0.8-16-4.5-20.3c-4-4.8-9-6.5-19.1-6.5h-6.5v8.2h6.5c4.3,0,7.2,0.3,9.2,1c1.5,0.5,2.5,1.2,3.5,2.5c1.1,1.2,1.5,2.2,1.9,4
+                        c0.5,2.2,0.7,5.5,0.6,11c0,5.5,0,6.1,0,6.3c0,0.1,0,0.1,0,0.3c0,0.5,0,1.9,0,4.7c0,5.2-1.1,8.3-3.3,10.5c-2.1,2.1-5.1,3.2-8.7,3.2
+                        c-7.4,0-12-4.6-12-12.1c0-3.7,1.2-6.8,3.2-8.9c2.1-2.1,5.3-3.2,10.4-3.2H726V508.1z M784.4,488.4c-0.1,0-0.1,0-0.8,0
+                        c-2.3,0-2.3,0-7.9,0c-8.6,0-15.4,2.8-20,8.2c-4.4,5.2-6.6,12.7-6.6,22c0,9.4,2.1,16.8,6.6,22c4.6,5.5,11.4,8.2,20,8.2
+                        c4.4,0,4.4,0,6.8,0c0.9,0,0.9,0,1.4,0c0.4,0,0.4,0,0.4,0v-8.2c-0.1,0-0.1,0-0.4,0c-0.5,0-0.5,0-1.4,0c-2.4,0-2.4,0-6.8,0
+                        c-6.2,0-10.7-1.8-13.6-5.3c-3-3.6-4.6-9.2-4.6-16.8c0-7.6,1.6-13.2,4.6-16.8c2.9-3.5,7.4-5.3,13.6-5.3c5.6,0,5.6,0,7.9,0
+                        c0.7,0,0.7,0,0.8,0V488.4z"/>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div class="mainVideoBg">
+        <!-- video here -->
+        <div class="videoWrapper">
+            <video class="mainVideo enter hide" preload="auto" autoplay src="resource/video/enter.mp4"></video>
+        </div>
+        <div class="videoWrapper">
+            <video class="mainVideo exit hide" preload="auto" autoplay src="resource/video/exit.mp4"></video>
+        </div>
+        <div class="videoWrapper">
+            <video class="mainVideo landing" preload="auto" autoplay src="resource/video/landing.mp4"></video>
+        </div>
+    </div>
+    <div id="home" class="module">
+        <div id="menu" class="menu">
+            <!--
+            <a href="#case" class="menuBtn caseBtn">
+                <span class="icon lnr lnr-layers"></span>
+                <span class="menuName">案例</span>
+            </a>
+            -->
+            <a href="#customer" class="menuBtn customerBtn">
+                <span class="icon lnr lnr-thumbs-up"></span>
+                <span class="menuName">客户</span>
+            </a>
+            <a href="#product" class="menuBtn productBtn">
+                <span class="icon lnr lnr-magic-wand"></span>
+                <span class="menuName">产品</span>
+            </a>
+            <a href="#aboutus" class="menuBtn aboutusBtn">
+                <span class="icon lnr lnr-users"></span>
+                <span class="menuName">我们</span>
+            </a>
+        </div>
+    </div>
+    <div id="product" class="module">
+        <div class="topic">
+            <div class="container">
+                我们创造更美好的东西
+            </div>
+        </div> 
+        <div class="cardContainer">
+            <div class="rotateZ">
+                <div class="rotateXY">
+                    <div class="shadow"></div>
+                    <div class="card">
+                        <div class="bg" style="background-image:url(resource/image/usecubes.bg.jpg)" ></div>
+                        <div class="dark"></div>
+                        <div class="light"></div>
+                        <div class="float">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 88.6" enable-background="new 0 0 400 88.6" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M112.1,45v37.9h-2.7l-0.4-2.7c-6.8,5.6-13.3,8.4-19.4,8.4c-7.7,0-11.5-3.9-11.5-11.7V45h3.5v31.3
+                                        c-0.1,3.2,0.6,5.5,2.1,7c1.5,1.5,3.7,2.2,6.8,2.2c2.7,0,5.4-0.6,8-1.9c2.6-1.2,6-3.3,10-6.1V45H112.1z"/>
+                                    <path fill="#FFFFFF" d="M143,68.6l-13.9-2c-3.2-0.5-5.5-1.6-7-3.3c-1.5-1.7-2.3-4.4-2.3-7.9c0-4.9,1.2-8.1,3.5-9.5
+                                        c2.4-1.4,6.5-2,12.4-1.9c6.4,0.1,8.7,0.4,13.6,1.1l-0.4,2.6c-6.8-0.4-8.9-0.5-12.9-0.5c-5.1-0.1-8.5,0.3-10.2,1.2
+                                        c-1.7,0.9-2.6,3.3-2.6,7.1c0,2.8,0.6,4.7,1.7,5.9c1.1,1.2,2.9,1.9,5.2,2.3l13.9,2c3.2,0.5,5.7,1.7,7.3,3.4c1.6,1.7,2.4,4.3,2.4,7.6
+                                        c0,5-1.3,8.3-3.9,9.7c-2.6,1.5-7,2.2-13.3,2.2c-5.7,0-8.7-0.1-13.6-0.9l0.4-2.6c5.1,0.4,7.9,0.4,12.9,0.3c5.5-0.1,9.2-0.6,11.1-1.7
+                                        c1.9-1.1,2.9-3.5,2.9-7.1c0-2.6-0.6-4.5-1.9-5.7C147.2,69.8,145.4,69,143,68.6z"/>
+                                    <path fill="#FFFFFF" d="M185.6,68.1h-22.7c0.2,6.5,1.6,11,4.1,13.6c2.5,2.6,6.5,3.8,12,3.8c4.9,0,7.1,0,12-0.7l0.4,2.5
+                                        c-3.5,1.2-6.1,1.4-12.9,1.4c-6.9,0-11.8-1.7-14.8-5.2c-3-3.4-4.5-9.2-4.5-17.4s1.4-13.9,4.3-17.2c2.9-3.3,7.6-5,14.4-5
+                                        c11.3,0,17,4.2,17.1,12.5c0.1,3.9-0.6,6.8-2.1,8.7C191.4,67.1,188.9,68.1,185.6,68.1z M162.9,65.2h22.2c4.4,0,6.5-2.8,6.3-8.5
+                                        c-0.1-3.3-1.2-5.7-3.3-7.2c-2.2-1.5-5.5-2.3-10-2.3c-5.5,0-9.4,1.3-11.7,4C164.1,53.8,162.9,58.5,162.9,65.2z"/>
+                                    <path fill="#FFFFFF" d="M233,84.5l0.5,2.5c-4.3,1.1-8.7,1.7-13.3,1.7c-7.2,0-12.3-1.7-15.2-5c-3-3.4-4.5-9.1-4.5-17.3
+                                        c0-8.2,1.5-14,4.5-17.3c3-3.4,8-5,15.2-5c5.1,0,9.3,0.6,12.5,1.7l-0.6,2.4c-3.1-0.6-6.9-0.9-11.2-0.9c-6.1,0-10.4,1.4-12.9,4.1
+                                        c-2.4,2.7-3.7,7.8-3.7,15.1c0,7.3,1.2,12.3,3.7,15.1c2.4,2.7,6.7,4.1,12.9,4.1C225.7,85.5,229.8,85.2,233,84.5z"/>
+                                    <path fill="#FFFFFF" d="M273.4,45v38.5h-2.7l-0.3-3.2c-6.8,5.6-13.3,8.4-19.4,8.4c-7.7,0-11.5-3.9-11.5-11.7V45h3.5v31.3
+                                        c-0.1,3.2,0.6,5.5,2.1,7c1.5,1.5,3.7,2.2,6.8,2.2c2.7,0,5.4-0.6,8-1.9c2.6-1.2,6-3.3,10-6.1V45H273.4z"/>
+                                    <path fill="#FFFFFF" d="M284.9,25.8l1.8,18.4c0,3.8-0.1,6.7-0.4,8.6c6.3-5.8,12.1-8.7,17.5-8.7c5.5,0,9.4,1.7,11.8,5.1
+                                        c2.4,3.4,3.6,9.2,3.6,17.2c0,8-1.3,13.7-4,17.2c-2.7,3.5-7.2,5.2-13.6,5.2c-5.8,0-11.9-0.9-18.4-2.8l-1.8-60.1H284.9z M286.8,55.4
+                                        v28.1c5,1.5,9.9,2.1,14.8,2c5.1,0,8.7-1.4,10.8-4.3c2.1-2.9,3.2-7.8,3.2-14.9c0-7-0.9-12-2.8-14.8c-1.9-2.9-5.1-4.3-9.7-4.3
+                                        c-2.5,0-4.9,0.6-7.3,1.9C293.4,50.4,290.4,52.5,286.8,55.4z"/>
+                                    <path fill="#FFFFFF" d="M351.7,68.1H329c0.2,6.5,1.6,11,4.1,13.6c2.5,2.6,6.5,3.8,12,3.8c4.9,0,7.3-0.1,12.2-0.8l0.4,2.5
+                                        c-3.5,1.2-6.3,1.5-13,1.5c-6.9,0-11.8-1.7-14.9-5.2c-3-3.4-4.5-9.2-4.5-17.4s1.4-13.9,4.3-17.2c2.9-3.3,7.6-5,14.4-5
+                                        c11.3,0,17,4.2,17.1,12.5c0.1,3.9-0.6,6.8-2.1,8.7C357.5,67.1,355,68.1,351.7,68.1z M329,65.2h22.2c4.4,0,6.4-2.8,6.3-8.5
+                                        c-0.1-3.3-1.2-5.7-3.3-7.2c-2.1-1.5-5.5-2.3-10-2.3c-5.5,0-9.4,1.3-11.7,4C330.2,53.8,329,58.5,329,65.2z"/>
+                                    <path fill="#FFFFFF" d="M389.2,68.6l-13.9-2c-3.2-0.5-5.5-1.6-7-3.3c-1.5-1.7-2.3-4.4-2.3-7.9c0-4.9,1.2-8.1,3.5-9.5
+                                        c2.4-1.4,6.5-2,12.4-1.9c6.4,0.1,9.3,0.3,14.2,1l-0.4,2.6c-6.8-0.4-9.5-0.4-13.5-0.4c-5.1-0.1-8.5,0.3-10.2,1.2
+                                        c-1.7,0.9-2.6,3.3-2.6,7.1c0,2.8,0.6,4.7,1.7,5.9c1.1,1.2,2.9,1.9,5.2,2.3l13.9,2c3.2,0.5,5.7,1.7,7.3,3.4c1.6,1.7,2.4,4.3,2.4,7.6
+                                        c0,5-1.3,8.3-3.9,9.7c-2.6,1.5-7,2.2-13.3,2.2c-5.7,0-8.4-0.2-13.2-0.9l0.4-2.6c5.1,0.4,7.5,0.4,12.5,0.4c5.5-0.1,9.2-0.6,11.1-1.7
+                                        c1.9-1.1,2.9-3.5,2.9-7.1c0-2.6-0.6-4.5-1.9-5.7C393.4,69.8,391.6,69,389.2,68.6z"/>
+                                </g>
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#62A043" d="M39.5,79.7L50,71.5l-0.2,9.7l-10.4,8.4V79.7z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#69B044" d="M17.7,62.9l0.6,9.9l21.1,16.8v-9.9L17.7,62.9z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#71BB44" d="M17.7,62.9l5-2.9l16.8,13l6.3-4.6l4.2,3.2l-10.6,8.2L17.7,62.9z"
+                                        />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#027AB8" d="M0,23.5l16,11.6l2.4,37.7L3.9,61.4L0,23.5z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#0070A8" d="M39.2,19.7v6.1L21.5,38.1L22.7,60l-5,2.9L16,35.1L39.2,19.7z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#0986C8" d="M0,23.5l23.7-14l15.5,10.2L16,35.1L0,23.5z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#EA7B2F" d="M39.2,25.7v-6.1l23.5,15.4v6.2L39.2,25.7z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#CE6A28" d="M62.7,35.1v6.2l16-10.9l0.2-5.9L62.7,35.1z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#F58435" d="M23.7,9.5L39.5,0l39.4,24.5L62.7,35.1L23.7,9.5z"/>
+                                </g>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="area" href="http://usecubes.com"></a>
+        </div>
+    </div>
+    <div id="case" class="module">
+        <span class="slogan">这都是我们最想表达的</span>
+        <ul class="list caseList">
+            <li>
+                <a href="javascript:;">
+                    <span class="border borderTop"></span>
+                    <span class="name">WebP生成工具</span>
+                    <span class="border borderBottom"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="border borderTop"></span>
+                    <span class="name">WebP生成工具</span>
+                    <span class="border borderBottom"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="border borderTop"></span>
+                    <span class="name">WebP生成工具</span>
+                    <span class="border borderBottom"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span class="border borderTop"></span>
+                    <span class="name">WebP生成工具</span>
+                    <span class="border borderBottom"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="customer" class="module">
+        <div class="topic">
+            <div class="container">
+                客户都是朋友
+            </div>
+        </div> 
+        <a class="customer" href="http://www.microsoftstore.com.cn/">
+            <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 1034 220" id="svg5358">
+              <defs id="defs5360"></defs>
+              <path d="m 1033.7455,99.8385 0,-18.18 -22.5763,0 0,-28.26375 -0.7599,0.23375 -21.20505,6.4875 -0.4175,0.1275 0,21.415 -33.46875,0 0,-11.92875 c 0,-5.555 1.2425,-9.80625 3.69,-12.64125 2.43125,-2.80125 5.90875,-4.225 10.3425,-4.225 3.18875,0 6.49,0.75125 9.81125,2.2325 l 0.8325,0.37125 0,-19.14625 -0.39125,-0.14375 c -3.09875,-1.11375 -7.315,-1.675 -12.53875,-1.675 -6.585,0 -12.56875,1.4325 -17.78625,4.2725 -5.22125,2.84375 -9.32875,6.90375 -12.205,12.06625 -2.8675,5.15625 -4.3225,11.11125 -4.3225,17.70125 l 0,13.11625 -15.72,0 0,18.18 15.72,0 0,76.58875 22.5675,0 0,-76.58875 33.46875,0 0,48.67125 c 0,20.045 9.455,30.20375 28.10125,30.20375 3.065,0 6.2888,-0.36 9.5825,-1.06375 3.3513,-0.72125 5.6338,-1.4425 6.9775,-2.2125 l 0.2975,-0.175 0,-18.34875 -0.9175,0.6075 c -1.225,0.8175 -2.75,1.48375 -4.5387,1.97875 -1.7963,0.505 -3.2963,0.75875 -4.4575,0.75875 -4.3688,0 -7.6,-1.1775 -9.6063,-3.5 -2.0275,-2.34375 -3.0562,-6.44375 -3.0562,-12.1775 l 0,-44.7425 22.5762,0 z m -167.11175,60.42175 c -8.19125,0 -14.64875,-2.71625 -19.2,-8.06625 -4.57875,-5.3775 -6.89875,-13.04375 -6.89875,-22.78375 0,-10.04875 2.32,-17.91375 6.90125,-23.38625 4.55375,-5.43625 10.95,-8.195 19.01375,-8.195 7.825,0 14.05375,2.635 18.515,7.83625 4.485,5.2275 6.76,13.03 6.76,23.19625 0,10.29125 -2.14,18.19625 -6.36,23.48375 -4.19,5.24875 -10.49125,7.915 -18.73125,7.915 m 1.005,-80.885 c -15.6275,0 -28.04,4.57875 -36.88875,13.61 -8.84375,9.0325 -13.32875,21.53125 -13.32875,37.15375 0,14.8375 4.3775,26.7725 13.01125,35.4675 8.63375,8.69875 20.38375,13.105 34.92,13.105 15.14875,0 27.31375,-4.6425 36.16,-13.79875 8.845,-9.1475 13.32625,-21.5275 13.32625,-36.785 0,-15.07 -4.205,-27.09375 -12.5025,-35.73125 -8.30125,-8.64125 -19.9775,-13.02125 -34.6975,-13.02125 m -86.60313,-5e-4 c -10.63,0 -19.4225,2.71875 -26.14,8.08 -6.7575,5.3925 -10.185,12.46625 -10.185,21.025 0,4.44875 0.74,8.40125 2.19625,11.7525 1.465,3.36375 3.7325,6.32375 6.74375,8.80875 2.99,2.465 7.6025,5.0475 13.7175,7.67375 5.13875,2.115 8.9725,3.905 11.4075,5.315 2.38,1.38125 4.07,2.77125 5.02375,4.12375 0.92625,1.32375 1.3975,3.135 1.3975,5.3725 0,6.36625 -4.7675,9.46375 -14.57875,9.46375 -3.63875,0 -7.79,-0.75875 -12.3375,-2.2575 -4.55,-1.49625 -8.80125,-3.6475 -12.63375,-6.40625 l -0.93625,-0.67125 0,21.72625 0.34375,0.16 c 3.19375,1.47375 7.21875,2.71625 11.96375,3.695 4.73625,0.97875 9.03875,1.4775 12.7775,1.4775 11.535,0 20.82375,-2.7325 27.60125,-8.125 6.82125,-5.43 10.27875,-12.67 10.27875,-21.52625 0,-6.3875 -1.86125,-11.86625 -5.53,-16.28375 -3.6425,-4.3825 -9.965,-8.405 -18.785,-11.96125 -7.02625,-2.82 -11.5275,-5.16125 -13.38375,-6.9575 -1.79,-1.73625 -2.69875,-4.19125 -2.69875,-7.3 0,-2.75625 1.12125,-4.96375 3.425,-6.7525 2.32125,-1.7975 5.55125,-2.71125 9.60375,-2.71125 3.76,0 7.6075,0.59375 11.4325,1.7575 3.82375,1.16375 7.18125,2.7225 9.985,4.63 l 0.92125,0.63 0,-20.61 -0.35375,-0.1525 c -2.58625,-1.10875 -5.99625,-2.0575 -10.1375,-2.8275 -4.125,-0.7625 -7.86625,-1.14875 -11.11875,-1.14875 m -95.1575,80.8855 c -8.18875,0 -14.64875,-2.71625 -19.19875,-8.06625 -4.58,-5.3775 -6.89625,-13.04125 -6.89625,-22.78375 0,-10.04875 2.31875,-17.91375 6.90125,-23.38625 4.55,-5.43625 10.945,-8.195 19.0125,-8.195 7.8225,0 14.05125,2.635 18.51375,7.83625 4.485,5.2275 6.76,13.03 6.76,23.19625 0,10.29125 -2.14125,18.19625 -6.36125,23.48375 -4.19,5.24875 -10.48875,7.915 -18.73125,7.915 m 1.0075,-80.885 c -15.63125,0 -28.04375,4.57875 -36.88875,13.61 -8.84375,9.0325 -13.33125,21.53125 -13.33125,37.15375 0,14.84375 4.38,26.7725 13.01375,35.4675 8.63375,8.69875 20.3825,13.105 34.92,13.105 15.145,0 27.31375,-4.6425 36.16,-13.79875 8.8425,-9.1475 13.32625,-21.5275 13.32625,-36.785 0,-15.07 -4.20625,-27.09375 -12.505,-35.73125 -8.30375,-8.64125 -19.9775,-13.02125 -34.695,-13.02125 m -84.47675,18.6945 0,-16.41125 -22.2925,0 0,94.76625 22.2925,0 0,-48.47625 c 0,-8.24375 1.86875,-15.015 5.55625,-20.13 3.64125,-5.05375 8.49375,-7.615 14.4175,-7.615 2.0075,0 4.26125,0.33125 6.7025,0.98625 2.41625,0.65125 4.16625,1.3575 5.19875,2.10125 l 0.93625,0.67875 0,-22.47375 -0.36125,-0.155 c -2.07625,-0.8825 -5.0125,-1.3275 -8.72875,-1.3275 -5.60125,0 -10.615,1.8 -14.90875,5.34375 -3.76875,3.115 -6.49375,7.38625 -8.57625,12.7125 l -0.23625,0 z m -62.21312,-18.695 c -10.22625,0 -19.34875,2.19375 -27.10875,6.51625 -7.775,4.3325 -13.7875,10.51875 -17.87875,18.385 -4.0725,7.8475 -6.14,17.01375 -6.14,27.235 0,8.95375 2.005,17.17125 5.9675,24.4125 3.965,7.25375 9.5775,12.92875 16.68125,16.865 7.09375,3.93125 15.2925,5.925 24.37,5.925 10.59375,0 19.63875,-2.11875 26.89125,-6.295 l 0.2925,-0.16875 0,-20.4225 -0.93625,0.68375 c -3.285,2.3925 -6.95625,4.3025 -10.90625,5.67875 -3.94,1.375 -7.5325,2.07 -10.68125,2.07 -8.7475,0 -15.76875,-2.7375 -20.86625,-8.1325 -5.10875,-5.40375 -7.69875,-12.99 -7.69875,-22.5375 0,-9.6075 2.70125,-17.38875 8.025,-23.13125 5.30625,-5.725 12.34125,-8.62875 20.9075,-8.62875 7.3275,0 14.4675,2.48125 21.2225,7.38125 l 0.93375,0.67875 0,-21.51875 -0.30125,-0.17 c -2.5425,-1.4225 -6.00875,-2.5975 -10.31375,-3.48875 -4.285,-0.88875 -8.47625,-1.3375 -12.46,-1.3375 m -66.48075,2.284 -22.2925,0 0,94.76625 22.2925,0 0,-94.76625 z M 462.79625,41.2875 c -3.66875,0 -6.86875,1.24875 -9.4975,3.72375 -2.64,2.4825 -3.98,5.6075 -3.98,9.295 0,3.63 1.32375,6.6975 3.9375,9.11375 2.5975,2.40875 5.8075,3.63 9.54,3.63 3.73125,0 6.95375,-1.22125 9.5825,-3.62625 2.64625,-2.42 3.9875,-5.4875 3.9875,-9.1175 0,-3.55875 -1.305,-6.6525 -3.87875,-9.195 -2.57,-2.5375 -5.83125,-3.82375 -9.69125,-3.82375 m -55.61988,33.3795 0,101.7575 22.75,0 0,-132.235 -31.48625,0 -40.0225,98.22 -38.83875,-98.22 -32.76875,0 0,132.235 21.37875,0 0,-101.7675 0.735,0 41.0125,101.7675 16.13375,0 40.3725,-101.7575 0.73375,0 z" id="path5056" style="fill:#706d6e;fill-opacity:1;fill-rule:nonzero;stroke:none"></path>
+              <path d="M 104.8675,104.8675 0,104.8675 0,0 l 104.8675,0 0,104.8675 z" id="path5058" style="fill:#f1511b;fill-opacity:1;fill-rule:nonzero;stroke:none"></path>
+              <path d="m 220.65375,104.8675 -104.86625,0 0,-104.8675 104.86625,0 0,104.8675 z" id="path5060" style="fill:#80cc28;fill-opacity:1;fill-rule:nonzero;stroke:none"></path>
+              <path d="m 104.865,220.695 -104.865,0 0,-104.8675 104.865,0 0,104.8675 z" id="path5062" style="fill:#00adef;fill-opacity:1;fill-rule:nonzero;stroke:none"></path>
+              <path d="m 220.65375,220.695 -104.86625,0 0,-104.8675 104.86625,0 0,104.8675 z" id="path5064" style="fill:#fbbc09;fill-opacity:1;fill-rule:nonzero;stroke:none"></path>
+            </svg>
+            微软官方商城
+        </a>
+        <a class="customer" href="http://protoduct.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 338.7 612.5 114.6" enable-background="new 0 338.7 612.5 114.6" xml:space="preserve">
+                <path fill="#00B5C3" d="M94.7,424.7c-15.8,9.5-31.6,19.2-47.3,28.7c-15.8-9.7-31.6-19.2-47.3-28.7v-57.3  c15.8-9.5,31.6-19.2,47.3-28.7c15.8,9.5,31.6,19.2,47.3,28.7V424.7z M47.3,347.6C34.2,371.6,21,395.5,8,419.4h78.3  C73.2,395.5,60.4,371.6,47.3,347.6 M44.7,445.6v-20.8H10.3C21.9,431.9,33.3,438.8,44.7,445.6 M84.3,424.8H49.8v20.8  C61.3,438.8,72.8,431.9,84.3,424.8 M89.6,373.3c-5.7,3.5-11.3,6.9-17,10.3c5.7,10.4,11.3,20.8,17,31.6V373.3z M53.8,348.7  C53.8,348.7,53.6,348.7,53.8,348.7c5.4,10.3,10.9,20.4,16.4,30.5c5.7-3.5,11.3-6.9,17-10.3C76,362.1,64.8,355.4,53.8,348.7   M5.1,414.4c5.7-10.4,11.3-20.7,16.9-31c-5.7-3.4-11.2-6.7-16.9-10.1C5.1,373.3,5.1,414.4,5.1,414.4z M24.4,379  c5.5-10.1,11-20.2,16.7-30.5c-11.3,6.9-22.4,13.5-33.6,20.2C13.2,372.2,18.7,375.6,24.4,379"></path>
+                <g>
+                    <g>
+                        <g>
+                            <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="178.4,374.1 218.2,374.1 218.2,397.1 178.4,397.1      178.4,400.1 224.3,400.1 224.3,369.5 178.4,369.5    "></polygon>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path fill="#00B5C3" stroke="#00B5C3" stroke-width="0.75" stroke-miterlimit="10" d="M298.3,368.7"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="296.7,374.1 336.2,374.1 336.2,369.5 288.7,369.5      288.7,374.1    "></polygon>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <rect x="123.2" y="397.1" fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" width="6.1" height="26"></rect>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path fill="#00B5C3" stroke="#00B5C3" stroke-width="0.75" stroke-miterlimit="10" d="M504.4,428.2"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path fill="#00B5C3" stroke="#00B5C3" stroke-width="0.75" stroke-miterlimit="10" d="M583.8,366.4"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path fill="#00B5C3" stroke="#00B5C3" stroke-width="0.75" stroke-miterlimit="10" d="M556.4,366.4"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path fill="#00B5C3" stroke="#00B5C3" stroke-width="0.75" stroke-miterlimit="10" d="M554.8,366.3"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="574.2,374.1 612,374.1 612,369.5 567.6,369.5      567.6,374.1    "></polygon>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="586,378.7 586,423.1 592.1,423.1 592.1,372.6      586,372.6    "></polygon>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" d="M278,423.1h-41.4v-53.6H278V423.1z M242.7,418.5h29.1v-44.4     h-29.1V418.5z"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="216.1,423.1 188.3,397.7 196.4,397.7 224.6,423.1         "></polygon>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" d="M388.3,423.1h-41.4v-53.6h41.4V423.1z M353,418.5h29.1v-44.4     H353V418.5z"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="492.5,369.5 492.5,373.6 492.5,387.9 492.5,418.5     460.3,418.5 460.3,387.9 460.3,373.6 460.3,369.5 454.2,369.5 454.2,423.1 498.6,423.1 498.6,369.5   "></polygon>
+                    </g>
+                    <g>
+                        <g>
+                            <g>
+                                <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="518.5,383.3 512.4,383.3 512.4,369.5 555.3,369.5       555.3,374.1 518.5,374.1     "></polygon>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="518.5,380.2 518.5,418.5 555.3,418.5 555.3,423.1       512.4,423.1 512.4,380.2     "></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="308.6,378.7 308.6,423.1 314.7,423.1 314.7,372.6      308.6,372.6    "></polygon>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <g>
+                                <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="435.8,383.3 441.9,383.3 441.9,369.5 399,369.5       399,374.1 435.8,374.1     "></polygon>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="435.8,380.2 435.8,418.5 399,418.5 399,423.1       441.9,423.1 441.9,380.2     "></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <polygon fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" points="123.2,374.1 163,374.1 163,397.1 123.2,397.1      123.2,400.1 169.2,400.1 169.2,369.5 123.2,369.5    "></polygon>
+                        </g>
+                    </g>
+                    <rect x="178.4" y="395.5" fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" width="46" height="4.6"></rect>
+                    <rect x="123.2" y="395.5" fill="#00B5C3" stroke="#00B5C3" stroke-miterlimit="10" width="46" height="4.6"></rect>
+                </g>
+            </svg>
+            原物 | 智造
+        </a>
+    </div>
+    <div id="aboutus" class="module">
+        <div class="topic">
+            <div class="container">
+                Wov的Macbook被偷了，Kares说能不能通过icloud找回。可是，Macbook上有密码锁，囧。
+            </div>
+        </div> 
+        <div class="us">
+            <div class="one" style="background-image:url(resource/image/Wov.png)">
+                Wov
+            </div>
+            <div class="one" style="background-image:url(resource/image/Jing.png)">
+                Jing
+            </div>
+            <div class="one" style="background-image:url(resource/image/Kares.png)">
+                Kares
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="contact">
+            <a href="mailto:contact@inactstudio.com">联系我们</a>
+        </div>
+    </div>
+    <nav class='global'>
+        <a href="#" class="logo">
+            <svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 98 68" enable-background="new 0 0 98 68" xml:space="preserve">
+                <g sketch:type="MSPage">
+                    <g id="Desktop-HD" transform="translate(0.000000, -12.000000)" sketch:type="MSArtboardGroup">
+                        <g id="Rectangle-1-_x2B_-inact" transform="translate(0.000000, 12.000000)" sketch:type="MSLayerGroup">
+                            <path id="Rectangle-1" sketch:type="MSShapeGroup" fill="#EBEBEB" d="M0,0h98L76,68H0V0z"/>
+                            <path id="inact" sketch:type="MSShapeGroup" fill="#51556E" d="M64.9,29.2h-3.1v-2h3.1c0-0.6,0-1.2,0-1.8c0-0.4,0-0.8,0-1.1
+                                c0-0.1,0-0.2,0-0.3c0,0,0,0,0-0.1c0,0,0,0,0,0l2.1,0c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0.1,0,0.2,0,0.3c0,0.3,0,0.7,0,1.1
+                                c0,0.6,0,1.2,0,1.8H70v2h-3.1c0,0.9,0,1.9,0,2.7c0,2.3,0,4.3,0,5.6c0,0,0,0.1,0,0.3c0,0.1,0,0.3,0,0.4c0.1,0.6,0.3,1.1,0.6,1.4
+                                c0.4,0.3,0.9,0.5,1.5,0.5v2c-2.3,0-3.9-1.5-4.2-3.7c0-0.3-0.1-0.7-0.1-0.9c0-1.4,0-3.3,0-5.6C64.9,31,64.9,30.1,64.9,29.2z
+                                 M20,42.2H22c0,0,0,0,0-0.1c0-0.1,0-0.1,0-0.3c0-0.5,0-0.5,0-1.2c0-1.3,0-2.7,0-3.9c0-1.4,0-2.7,0-3.6c0-0.8,0.1-1.5,0.3-2.1
+                                c0.2-0.5,0.4-0.8,0.7-1.1c0.5-0.4,1.2-0.7,2-0.7c0.8,0,1.4,0.2,1.9,0.6c0.3,0.3,0.5,0.6,0.7,1.1c0.2,0.5,0.3,1.2,0.3,2.1
+                                c0,3.2,0,5.6,0,7.4c0,0.9,0,0.9,0,1.4c0,0.2,0,0.2,0,0.3c0,0.1,0,0.1,0,0.1h2.1c0,0,0,0,0-0.1c0-0.1,0-0.1,0-0.3
+                                c0-0.5,0-0.5,0-1.4c0-1.8,0-4.2,0-7.4c0-2.1-0.6-3.6-1.7-4.6c-0.5-0.4-1-0.7-1.7-0.9c-0.5-0.2-1.1-0.2-1.6-0.2
+                                c-0.6,0-1.1,0.1-1.6,0.2c-0.6,0.2-1.2,0.5-1.7,0.9c-1.2,1-1.8,2.5-1.8,4.7c0,0.9,0,2.2,0,3.6c0,1.2,0,2.6,0,3.9
+                                c0,0.7,0,0.7,0,1.2c0,0.2,0,0.2,0,0.3C20,42.1,20,42.1,20,42.2H22v-15H20V42.2z M13,27.2v15h2.1v-15H13z M39.4,32
+                                c-1.8,0-3.1,0.5-4,1.4c-0.9,0.9-1.4,2.2-1.4,3.6c0,3,2.1,5,5,5c1.4,0,2.7-0.5,3.6-1.4c1-0.9,1.4-2.2,1.4-4c0-0.7,0-1,0-1.2
+                                c0,0,0,0,0-0.1c0-0.1,0-0.2,0-1.6c0-2.9-0.2-4-1.1-5c-1-1.2-2.2-1.6-4.7-1.6h-1.6v2h1.6c1.1,0,1.8,0.1,2.3,0.3
+                                c0.4,0.1,0.6,0.3,0.9,0.6c0.3,0.3,0.4,0.6,0.5,1c0.1,0.5,0.2,1.4,0.2,2.7c0,1.4,0,1.5,0,1.6c0,0,0,0,0,0.1c0,0.1,0,0.5,0,1.2
+                                c0,1.3-0.3,2.1-0.8,2.6c-0.5,0.5-1.3,0.8-2.2,0.8c-1.8,0-3-1.1-3-3c0-0.9,0.3-1.7,0.8-2.2c0.5-0.5,1.3-0.8,2.6-0.8h3.2v-2H39.4z
+                                 M57.5,27.2c0,0,0,0-0.2,0c-0.6,0-0.6,0-2,0c-2.1,0-3.8,0.7-5,2c-1.1,1.3-1.6,3.1-1.6,5.5c0,2.3,0.5,4.2,1.6,5.5
+                                c1.1,1.4,2.8,2,5,2c1.1,0,1.1,0,1.7,0c0.2,0,0.2,0,0.4,0c0.1,0,0.1,0,0.1,0v-2c0,0,0,0-0.1,0c-0.1,0-0.1,0-0.4,0
+                                c-0.6,0-0.6,0-1.7,0c-1.5,0-2.6-0.4-3.4-1.3c-0.7-0.9-1.2-2.3-1.2-4.2c0-1.9,0.4-3.3,1.2-4.2c0.7-0.9,1.8-1.3,3.4-1.3
+                                c1.4,0,1.4,0,2,0c0.2,0,0.2,0,0.2,0V27.2z"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <div class="titleContainer"></div>
+    </nav>
 </body>
+<script type="text/javascript" src="packages/requirejs/require.js"></script>
+<script type="text/javascript">
+    var _globalDeps = [];
+
+    if(window.location.port === "" || window.location.search.indexOf("min") > -1){
+        _globalDeps.push('pages/home/all.built.min')
+    }
+
+    require.config({
+        baseUrl:'',
+        waitSeconds: 0,
+        paths: {
+            'director' : 'packages/director/build/director.min',
+            'jquery' : 'packages/jquery/dist/jquery.min',
+            'velocity' : 'packages/velocity/velocity.min'
+        },
+        packages:[
+            {
+                name : 'less',
+                location : 'packages/require-less',
+                main : 'less'
+            },
+            {
+                name:'when',
+                location:'packages/when',
+                main:'when'
+            }
+        ],
+        deps: _globalDeps,
+        shim: {
+            'jquery': {
+                'exports': 'jQuery'
+            },
+            "velocity": {
+                deps: [ "jquery" ]
+            }
+        },
+        callback:function(){
+            require(['jquery', 'director', 'when', 'velocity', 'pages/'+document.body.getAttribute('data-main')+'/index'], function(Main) {
+                console.info("start...")
+            });
+        }
+    });
+
+</script>
+
 </html>
